@@ -25,6 +25,9 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+.content p{
+	width: 100%;
+}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -32,6 +35,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
+
 
 ol, ul {
 	list-style: none;
@@ -2098,8 +2103,9 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0.5em 0 2em 0;
 			width: 100%;
+			text-align: center;
 		}
 
 			.image.fit img {
@@ -2859,6 +2865,7 @@ input, select, textarea {
 			.posts article .image {
 				display: block;
 				margin: 0 0 2em 0;
+				/*height: 250px;*/
 			}
 
 				.posts article .image img {
@@ -3062,6 +3069,13 @@ input, select, textarea {
 				}
 
 		}
+    @media screen and (max-width: 980px)  {
+      .hidden-xs
+      {
+        display: none !important;
+      }
+    }
+
 
 /* Sidebar */
 
@@ -3408,6 +3422,19 @@ input, select, textarea {
 			width: 50%;
 		}
 
+		#banner .content2 {
+			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
+			-moz-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;
+			/*width: 50%;*/
+		}	
+
+
 		#banner .image {
 			-moz-flex-grow: 0;
 			-webkit-flex-grow: 0;
@@ -3420,6 +3447,10 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 4em;
 			width: 50%;
+		}
+
+		#banner .image2 {
+			margin: 2em 4em 2em 0;
 		}
 
 			#banner .image img {
@@ -3459,6 +3490,17 @@ input, select, textarea {
 					flex-shrink: 0;
 					width: 100%;
 				}
+				#banner .content2 {
+					-moz-flex-grow: 0;
+					-webkit-flex-grow: 0;
+					-ms-flex-grow: 0;
+					flex-grow: 0;
+					-moz-flex-shrink: 0;
+					-webkit-flex-shrink: 0;
+					-ms-flex-shrink: 0;
+					flex-shrink: 0;
+					/*width: 100%;*/
+				}
 
 				#banner .image {
 					-moz-flex-grow: 0;
@@ -3476,7 +3518,7 @@ input, select, textarea {
 					width: 100%;
 				}
 
-		}
+	}
 
 		@media screen and (orientation: portrait) and (max-width: 480px) {
 
@@ -3603,3 +3645,32 @@ input, select, textarea {
 			margin-top: 0;
 			padding-top: 0;
 		}
+
+.block1 {
+    margin-top: 2em;
+    margin-bottom: 2em;/*//4*/
+    background-color: coral;
+    /* margin-left: 0.2em; */
+    margin-left: 2em;
+    /* margin-right: 1em; */
+    height: auto;
+
+}
+.block2{
+	/*margin: 3em;*/
+	border-top: solid 2px rgba(210, 215, 217, 0) !important;
+	padding: 0 !important;
+	margin-top: -4em;
+}
+
+.block3{
+
+}
+.major h2{
+	width: 100%;
+	display: inline;
+}
+.myline{
+	border-top: solid 2px rgba(210, 215, 217, 0.75);
+	padding: 4em 0 0 0;
+}
